@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Osprey TDD Framework">
+    <test name="Running with Class">
+        <classes>
+            <class name="tek.tdd.test.regression.SecurityTest">
+                <methods>
+                    <include name="validateLoginWithInvalidCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--    <test name="Running With Package">-->
+    <!--        <packages>-->
+    <!--            <package name="tek.tdd.test.regression"/>-->
+    <!--        </packages>-->
+    <!--    </test>-->
+</suite>
+
+
+<!--
+<classes>
+            <class name="tek.tdd.test.smoke.SetupTests" />
+            <class name="tek.tdd.test.regression.SecurityTest" />
+        </classes>
+
+        // Another way is to run under packages
+        // Can run both ways pacakges and class name
+        <test name="Running with packages">
+
+
+        or
+
+        <suite name="Osprey TDD Framework">
+    <test name="Running with Class">
+        <classes>
+            <class name="tek.tdd.test.regression.SecurityTest">
+                <methods>
+                    <include name="validateLoginWithInvalidCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+        -->
