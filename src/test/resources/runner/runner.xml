@@ -1,6 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Osprey TDD Framework">
-    <test name="Running with Class">
+    <test name="Running With Package">
+        <packages>
+            <package name="tek.tdd.test.smoke" />
+            <package name="tek.tdd.test.regression"/>
+        </packages>
+    </test>
+</suite>
+        <!--
         <classes>
             <class name="tek.tdd.test.regression.SecurityTest">
                 <methods>
@@ -14,7 +21,6 @@
     <!--            <package name="tek.tdd.test.regression"/>-->
     <!--        </packages>-->
     <!--    </test>-->
-</suite>
 
 
 <!--

@@ -82,9 +82,9 @@ public class SecurityTest extends BaseUITests {
     @DataProvider(name="negativeTestData")
     private String[][] negativeTestData(){
         String [][] data= {
-                {"wrong@email.com","Tek@2023","Wrong Password or username.try again\""},
-                {"kaur1234@gmail.com","invalid@Password","Wrong Password or username.try again"},
-                {"wrong@email.com","invalid@Password","Wrong Password or username.try again"}
+                {"wrong@email.com","Tek@2023","wrong username or password"},
+                {"kaur1234@gmail.com","invalid@Password","wrong username or password"},
+                {"wrong@email.com","invalid@Password","wrong username or password"}
 
         };
         return data;
